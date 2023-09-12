@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: orange;
+    height: 80px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    padding: 20px;
+}
+nav ul li a{
+    padding-right: 10px;
+}
+h1{
+    background-color: black;
+    color: blueviolet;
+    text-align: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+}
+
+.logo img{
+    float: left;
+    color: #fff;
+    height: 50px;
+
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    color: #fff;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+
+/* falta acomodar la imagen de inicio */
+
+h2{
+    background-color: rgb(42, 155, 117);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+table{
+    background-color: #a77710;
+    margin: 0 auto;
+}
+
+table, th, td{
+    border: 5px solid black;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer{
+    background-color: rgba(22, 1, 1, 0.76);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.social-link a{
+    font-size: 50px;
+    color: orange;
+    text-decoration: none;
+}
+.social-link i{
+    letter-spacing: 20px;
+}
+.social-link p{
+    font-size: 16px;
+}
+
+
+/*estilo para la tienda*/
+
+.tienda ul li{
+    background-color: black;
+    color: #fff;
+    
+
+}
+
+
+/*estilo para armar pc*/
+
+.armatupc{
+    background-color: violet;
+    color: #fff;
+    text-align: center;
+}
+.pf{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.intel{
+    float: left;
+}
+.amd{
+    float: right;
+}
+
+/*estilo para NOSOTROS*/
+.nosotros1{
+    background-color: #dbe0fc;
+    color: black;
+    font-size: 36px;
+}
+.nosotros2{
+    background-color: #bdbde2;
+    color: black;
+    font-size: 28px;
+}
+.nosotros3{
+    background-color: #adacdd;
+    color: black;
+    font-size: 22px;
+}
+
+
+/*estilo para CRYPTOS*/
+.sobrecriptos{
+    background-color: black;
+    color: #fff;
+}
+.cryptoimg{
+    float: right;
+}
+
+
+/*estilo para contacto*/
+.contacto1{
+    background-color: black;
+    color: #fff;
+    font-size: 28px;
+    padding-left: 80px;
+}
+.contacto2{
+    background-color: black;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+.contacto3{
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+form{
+    float: right;
+}
+
+label{
+    background-color: black;
+    color: #fff;
+}
