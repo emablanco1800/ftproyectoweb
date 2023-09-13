@@ -4,16 +4,35 @@
     box-sizing: border-box;
 }
 header{
+    display: flex;
     background-color: orange;
-    height: 80px;
-    width: 100%;
+    min-height: 70px;
+    width: 100%; 
+    justify-content: space-between;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     padding: 20px;
 }
 nav ul li a{
+    font-weight: 600;
     padding-right: 10px;
 }
+
+nav ul li a:hover{
+    color: blueviolet;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+nav ul li a{
+    padding: 10px 0px;
+}
+
+
 h1{
     background-color: black;
     color: blueviolet;
@@ -24,9 +43,10 @@ h1{
 }
 
 .logo img{
-    float: left;
+    display: flex;
     color: #fff;
     height: 50px;
+    align-items: center;
 
 }
 
@@ -146,11 +166,19 @@ footer{
 
 /*estilo para CRYPTOS*/
 .sobrecriptos{
+    margin-inline-start: 50px;
+    font-size: 50px;
     background-color: black;
     color: #fff;
 }
-.cryptoimg{
+.cryptoimg {
     float: right;
+}
+
+.necesita {
+    width: 100%;
+    color: azure;
+    font-size: 30px;
 }
 
 .container-fluid{
@@ -159,24 +187,26 @@ footer{
     height: auto;
     max-width: 100%;
     padding: 20px;
+    align-items: center;
     
 }
 
-.row{
+.row {
     width: 100%;
     color: #fff;
-    padding: 8px;
-    
-}
-.feat{
-    border: 3px solid black;
-    text-align: center;
 }
 
-.feat img{
-    background-size: cover;
+.feat{
+
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
     background-position: center;
 }
+
+
 
 
 
@@ -207,12 +237,14 @@ footer{
     color: #fff;
     font-size: 28px;
     padding-left: 80px;
+    margin-inline-start: 12px;
 }
 .contacto2{
     background-color: black;
     color: #fff;
     font-size: 22px;
     padding-left: 40px;
+    margin-inline-start: 50px;
 }
 
 .contacto3{
@@ -220,6 +252,7 @@ footer{
     color: #fff;
     font-size: 18px;
     padding-left: 40px;
+    margin-inline-start: 50px;
 }
 
 form{
@@ -229,4 +262,9 @@ form{
 label{
     background-color: black;
     color: #fff;
+}
+
+iframe{ 
+    margin-inline-start: 50px;
+
 }
