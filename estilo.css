@@ -82,6 +82,14 @@ table{
 table, th, td{
     border: 5px solid black;
 }
+
+th {
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+
 html{
     height: 100%;
 }
