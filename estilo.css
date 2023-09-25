@@ -5,7 +5,7 @@
 }
 header{
     display: flex;
-    background-image: url(./multimedia/cielo-violet2.jpg);
+    background-image: url(./multimedia/fondo.jpg);
     min-height: 70px;
     width: 100%; 
     justify-content: space-between;
@@ -34,8 +34,8 @@ nav ul li a{
 
 
 h1{
-    background-color: #0055aa;
-    background-image: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
+    background-color: #141516;
+    background-image: linear-gradient(270deg, #141516 0%, #562387 33%, #6d4b6c 66%, #080808 100%);
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 80px;
