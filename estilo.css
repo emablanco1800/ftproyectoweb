@@ -5,7 +5,7 @@
 }
 header{
     display: flex;
-    background-color: orange;
+    background-image: url(./multimedia/cielo-violet2.jpg);
     min-height: 70px;
     width: 100%; 
     justify-content: space-between;
@@ -22,11 +22,11 @@ nav ul li a:hover{
     color: blueviolet;
 }
 
-@media (max-width:700px){
+/*@media (max-width:700px){
     header{
         flex-direction: column;
     }
-}
+} */
 
 nav ul li a{
     padding: 10px 0px;
@@ -34,8 +34,9 @@ nav ul li a{
 
 
 h1{
-    background-color: black;
-    color: blueviolet;
+    background-color: #0055aa;
+    background-image: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 80px;
     height: 100px;
@@ -63,8 +64,11 @@ h1{
     color: #fff;
     text-decoration: none;
 }
-body{
-    background-color: black;
+
+
+.galery{
+    height: 400px;
+    width: 400px;
 }
 
 /* falta acomodar la imagen de inicio */
@@ -94,14 +98,16 @@ html{
     height: 100%;
 }
 body{
-    background-color: black;
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
 footer{
-    width: 100%;
+    width: auto;
     background-color: rgba(22, 1, 1, 0.76);
     color: #fff;
     text-align: center;
@@ -147,18 +153,18 @@ footer{
     font-size: 22px;
 }
 
-.intel{
-    float: left;
-}
-.amd{
-    float: right;
+.intel-amd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+
+
 /*estilo para NOSOTROS*/
-.nosotros1{
-    background-color: #dbe0fc;
-    color: black;
-    font-size: 36px;
+/* .nosotros1{
+    width: 500px;
+    height: 500px;
 }
 .nosotros2{
     background-color: #bdbde2;
@@ -169,7 +175,9 @@ footer{
     background-color: #adacdd;
     color: black;
     font-size: 22px;
-}
+} */
+
+
 
 
 /*estilo para CRYPTOS*/
@@ -189,29 +197,16 @@ footer{
     font-size: 30px;
 }
 
-.container-fluid{
-    width: 100%;
+.rig{
     display: grid;
-    height: auto;
-    max-width: 100%;
-    padding: 20px;
-    align-items: center;
-    
-}
-
-.row {
-    width: 100%;
-    color: #fff;
-}
-
-.feat{
-
-    display: flex;
-    width: 200px;
+    width: 280px;
     height: 200px;
-    border: 3px solid black;
-    text-align: center;
-    background-position: center;
+    grid-row-gap: 10px;
+}
+
+.col{
+    background-color: black;
+    color: #fff;
 }
 
 
@@ -263,8 +258,17 @@ footer{
     margin-inline-start: 50px;
 }
 
-form{
+/*form{
     float: right;
+}*/
+
+/*.section-contacto-form iframe{
+    display: flex;
+    justify-content: center;
+}*/
+.container{
+    display: flex;
+    justify-content: space-around;
 }
 
 label{
@@ -272,7 +276,8 @@ label{
     color: #fff;
 }
 
-iframe{ 
+/*iframe{ 
+    display: flex;
     margin-inline-start: 50px;
 
-}
+}*/
