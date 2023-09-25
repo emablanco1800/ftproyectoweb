@@ -161,6 +161,23 @@ footer{
     align-items: center;
 }
 
+.intel{
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.amd{
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.amd:hover{
+    transform: scale(1.2);
+}
+
+.intel:hover{
+    transform: scale(1.2);
+}
 
 
 /*estilo para NOSOTROS*/
@@ -204,6 +221,12 @@ footer{
     width: 280px;
     height: 200px;
     grid-row-gap: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.rig:hover{
+    transform: scale(1.2);
 }
 
 .col{
