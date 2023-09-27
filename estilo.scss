@@ -5,6 +5,8 @@
 }
 
 $degradado: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
+$colorletrasmenu: blueviolet;
+$textosblancos: #fff;
 
 header{
     display: flex;
@@ -12,6 +14,7 @@ header{
     min-height: 70px;
     width: 100%; 
     justify-content: space-between;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     padding: 20px;
@@ -22,33 +25,63 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: blueviolet;
+    color: $colorletrasmenu;
 }
 
-/*@media (max-width:700px){
+@media (min-width: 320px) and (max-width: 720px){
     header{
-        flex-direction: column;
+        display: none;
     }
-} */
+}
+
+@media (min-width: 720px) and (max-width: 1920px){
+    .navbar{
+        display: none;
+    }
+}
 
 nav ul li a{
     padding: 10px 0px;
 }
 
-
 h1{
     background-color: #0055aa;
     background-image: $degradado;
-    color: rgb(255, 255, 255);
+    color: $textosblancos;
     text-align: center;
     font-size: 80px;
     height: 100px;
     width: 100%;
 }
 
+@media  screen and (min-width: 320px ){
+    h1{
+        display: flex;
+        width: 320px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+}
+
+@media  screen and (min-width: 412px ){
+    h1{
+        display: flex;
+        width: 412px;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+}
+
+
 .logo img{
     display: flex;
-    color: #fff;
+    color: $textosblancos;
     height: 50px;
     align-items: center;
 
@@ -64,7 +97,7 @@ h1{
 }
 
 .barra a{
-    color: #fff;
+    color: $textosblancos;
     text-decoration: none;
 }
 
@@ -78,7 +111,7 @@ h1{
 
 h2{
     background-color: rgb(42, 155, 117);
-    color: rgb(255, 255, 255);
+    color: $textosblancos;
     text-align: center;
 }
 table{
@@ -99,19 +132,27 @@ td {
 
 html{
     height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 body{
     background-color: #141516;
     background-image: linear-gradient(270deg, #141516 0%, #562387 33%, #6d4b6c 66%, #080808 100%);
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
+
+/* =========================================================================== */
+/*                      Footer */
+/* =========================================================================== */
 footer{
     width: auto;
     background-color: rgba(22, 1, 1, 0.76);
-    color: #fff;
+    color: $textosblancos;
     text-align: center;
     font-size: 30px;
     padding: 20px;
@@ -130,27 +171,28 @@ footer{
     font-size: 16px;
 }
 
-
-/*estilo para la tienda*/
+/* =========================================================================== */
+/*                          estilo para la tienda*/
+/* =========================================================================== */
 
 .tienda ul li{
     background-color: black;
-    color: #fff;
+    color: $textosblancos;
     
 
 }
 
-
-/*estilo para armar pc*/
-
+/* =========================================================================== */
+/*                      estilo para armar pc*/
+/* =========================================================================== */
 .armatupc{
     background-color: violet;
-    color: #fff;
+    color: $textosblancos;
     text-align: center;
 }
 .pf{
     background-color: black;
-    color: #fff;
+    color: $textosblancos;
     text-align: center;
     font-size: 22px;
 }
@@ -160,6 +202,8 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 .intel{
     transition: 0.5s;
@@ -180,7 +224,14 @@ footer{
 }
 
 
+/* =========================================================================== */
 /*estilo para NOSOTROS*/
+/* =========================================================================== */
+.texto{
+    color: $textosblancos;
+    padding: auto;
+}
+
 /* .nosotros1{
     width: 500px;
     height: 500px;
@@ -196,18 +247,20 @@ footer{
     font-size: 22px;
 } */
 
-
-
-
-/*estilo para CRYPTOS*/
+/* =========================================================================== */
+/*                          estilo para CRYPTOS*/
+/* =========================================================================== */
 .sobrecriptos{
+    display: flex;
+    justify-content: flex-start;
     margin-inline-start: 50px;
     font-size: 50px;
     background-color: black;
-    color: #fff;
+    color: $textosblancos;
 }
 .cryptoimg {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .necesita {
@@ -231,11 +284,19 @@ footer{
 
 .col{
     background-color: black;
-    color: #fff;
+    color: $textosblancos;
 }
 
+/*@media  screen and (max-width: 412px){
+    .cryptoimg {
+        display: flex;
+        align-self: flex-end;
+        width: 200px;
+        height: 200px;
+    }
 
-
+}
+*/
 
 
 
@@ -259,7 +320,9 @@ footer{
    background-position: center;
 }*/
 
-/*estilo para contacto*/
+/* =========================================================================== */
+/*                          estilo para contacto*/
+/* =========================================================================== */
 .contacto1{
     background-color: black;
     color: #fff;

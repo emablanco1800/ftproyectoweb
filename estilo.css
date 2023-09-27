@@ -10,6 +10,7 @@ header {
   min-height: 70px;
   width: 100%;
   justify-content: space-between;
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
   padding: 20px;
@@ -24,11 +25,16 @@ nav ul li a:hover {
   color: blueviolet;
 }
 
-/*@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-} */
+@media (min-width: 320px) and (max-width: 720px) {
+  header {
+    display: none;
+  }
+}
+@media (min-width: 720px) and (max-width: 1920px) {
+  .navbar {
+    display: none;
+  }
+}
 nav ul li a {
   padding: 10px 0px;
 }
@@ -36,13 +42,33 @@ nav ul li a {
 h1 {
   background-color: #0055aa;
   background-image: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-align: center;
   font-size: 80px;
   height: 100px;
   width: 100%;
 }
 
+@media screen and (min-width: 320px) {
+  h1 {
+    display: flex;
+    width: 320px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 412px) {
+  h1 {
+    display: flex;
+    width: 412px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+}
 .logo img {
   display: flex;
   color: #fff;
@@ -72,7 +98,7 @@ h1 {
 /* falta acomodar la imagen de inicio */
 h2 {
   background-color: rgb(42, 155, 117);
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-align: center;
 }
 
@@ -95,6 +121,8 @@ td {
 
 html {
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -102,9 +130,14 @@ body {
   background-image: linear-gradient(270deg, #141516 0%, #562387 33%, #6d4b6c 66%, #080808 100%);
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
+/* =========================================================================== */
+/*                      Footer */
+/* =========================================================================== */
 footer {
   width: auto;
   background-color: rgba(22, 1, 1, 0.76);
@@ -129,13 +162,17 @@ footer {
   font-size: 16px;
 }
 
-/*estilo para la tienda*/
+/* =========================================================================== */
+/*                          estilo para la tienda*/
+/* =========================================================================== */
 .tienda ul li {
   background-color: black;
   color: #fff;
 }
 
-/*estilo para armar pc*/
+/* =========================================================================== */
+/*                      estilo para armar pc*/
+/* =========================================================================== */
 .armatupc {
   background-color: violet;
   color: #fff;
@@ -173,7 +210,14 @@ footer {
   transform: scale(1.2);
 }
 
+/* =========================================================================== */
 /*estilo para NOSOTROS*/
+/* =========================================================================== */
+.texto {
+  color: #fff;
+  padding: auto;
+}
+
 /* .nosotros1{
     width: 500px;
     height: 500px;
@@ -188,8 +232,12 @@ footer {
     color: black;
     font-size: 22px;
 } */
-/*estilo para CRYPTOS*/
+/* =========================================================================== */
+/*                          estilo para CRYPTOS*/
+/* =========================================================================== */
 .sobrecriptos {
+  display: flex;
+  justify-content: flex-start;
   margin-inline-start: 50px;
   font-size: 50px;
   background-color: black;
@@ -197,7 +245,8 @@ footer {
 }
 
 .cryptoimg {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .necesita {
@@ -224,6 +273,16 @@ footer {
   color: #fff;
 }
 
+/*@media  screen and (max-width: 412px){
+    .cryptoimg {
+        display: flex;
+        align-self: flex-end;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+*/
 /*.galeria {
     height: auto;
     max-width: 100%;
@@ -243,7 +302,9 @@ footer {
    background-size: cover;
    background-position: center;
 }*/
-/*estilo para contacto*/
+/* =========================================================================== */
+/*                          estilo para contacto*/
+/* =========================================================================== */
 .contacto1 {
   background-color: black;
   color: #fff;
