@@ -45,6 +45,7 @@ h1 {
   color: #fff;
   text-align: center;
   font-size: 80px;
+  text-shadow: 3px -4px 6px #61a2e4, #1682a3 -1px 8px 4px;
   height: 100px;
   width: 100%;
 }
@@ -105,11 +106,17 @@ h1 {
   width: 400px;
 }
 
-/* falta acomodar la imagen de inicio */
 h2 {
-  background-color: rgb(42, 155, 117);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #6ABDF7;
   color: #fff;
   text-align: center;
+  font-size: 50px;
+  font-family: cambria cursive;
+  height: 65px;
 }
 
 table {

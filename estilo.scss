@@ -7,6 +7,27 @@
 $degradado: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
 $colorletrasmenu: blueviolet;
 $textosblancos: #fff;
+$fondoh2: #6ABDF7;
+$letrash2: cambria cursive;
+$alto: 65px;
+$letramv: 30px;
+
+@mixin formatoh2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: $fondoh2;
+    color: $textosblancos;
+    text-align: center;
+    font-size: 50px;
+    font-family: cambria cursive;
+    height: $alto;
+}
+
+
+
+
 
 header{
     display: flex;
@@ -50,6 +71,8 @@ h1{
     color: $textosblancos;
     text-align: center;
     font-size: 80px;
+    text-shadow: 3px -4px 6px #61a2e4 ,
+                #1682a3 -1px 8px 4px;
     height: 100px;
     width: 100%;
 }
@@ -119,13 +142,15 @@ h1{
     width: 400px;
 }
 
-/* falta acomodar la imagen de inicio */
+$alto: 65px;
 
-h2{
-    background-color: rgb(42, 155, 117);
-    color: $textosblancos;
-    text-align: center;
+
+
+h2{ 
+    @include formatoh2
 }
+
+
 table{
     background-color: #a77710;
     margin: 0 auto;
@@ -383,6 +408,7 @@ footer{
 
     }
 }
+
 
 .necesita {
     width: 100vw;
