@@ -11,7 +11,8 @@ header {
   width: 100%;
   justify-content: space-between;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  font-family: courier;
   font-size: 22px;
   padding: 20px;
 }
@@ -42,12 +43,13 @@ nav ul li a {
 h1 {
   background-color: #0055aa;
   background-image: linear-gradient(62deg, #195ea3 0%, #8633d4 100%);
+  font-family: cambria cursive;
   color: #fff;
   text-align: center;
   font-size: 80px;
   text-shadow: 3px -4px 6px #61a2e4, #1682a3 -1px 8px 4px;
   height: 100px;
-  width: 100%;
+  width: 100vw;
 }
 
 @media screen and (min-width: 320px) {
@@ -114,7 +116,7 @@ h2 {
   background-color: #6ABDF7;
   color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: auto;
   font-family: cambria cursive;
   height: 65px;
 }
@@ -163,6 +165,7 @@ footer {
   font-size: 30px;
   padding: 20px;
   margin-top: auto;
+  overflow-x: hidden;
 }
 
 .social-link a {
@@ -259,13 +262,19 @@ footer {
   background-color: violet;
   color: #fff;
   text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .pf {
+  display: flex;
+  justify-content: center;
   background-color: black;
   color: #fff;
   text-align: center;
   font-size: 22px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .intel-amd {
@@ -292,6 +301,20 @@ footer {
   transform: scale(1.2);
 }
 
+@media (min-width: 320px) and (max-width: 720px) {
+  .intel-amd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .intel .amd {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+  }
+}
 /* =========================================================================== */
 /*estilo para NOSOTROS*/
 /* =========================================================================== */
@@ -448,13 +471,15 @@ footer {
   margin-inline-start: 50px;
 }
 
-/*form{
-    float: right;
-}*/
-/*.section-contacto-form iframe{
-    display: flex;
-    justify-content: center;
-}*/
+@media screen and (min-width: 320px) {
+  .contacto2 {
+    background-color: black;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .container {
   display: flex;
   justify-content: space-around;
@@ -465,6 +490,12 @@ label {
   color: #fff;
 }
 
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*iframe{ 
     display: flex;
     margin-inline-start: 50px;
