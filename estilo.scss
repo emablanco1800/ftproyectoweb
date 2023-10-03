@@ -41,6 +41,11 @@ header{
     font-size: 22px;
     padding: 20px;
 }
+
+.logo{
+    border-radius: 50%;
+}
+
 nav ul li a{
     font-weight: 600;
     padding-right: 10px;
@@ -183,6 +188,10 @@ body{
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+}
+
+.navbar{
+    background-image: url(multimedia/fondo.jpg);
 }
 
 
@@ -365,20 +374,7 @@ footer{
     padding: auto;
 }
 
-/* .nosotros1{
-    width: 500px;
-    height: 500px;
-}
-.nosotros2{
-    background-color: #bdbde2;
-    color: black;
-    font-size: 28px;
-}
-.nosotros3{
-    background-color: #adacdd;
-    color: black;
-    font-size: 22px;
-} */
+
 
 /* =========================================================================== */
 /*                          estilo para CRYPTOS*/
@@ -462,38 +458,7 @@ footer{
     justify-content: center;
 }
 
-/*@media  screen and (max-width: 412px){
-    .cryptoimg {
-        display: flex;
-        align-self: flex-end;
-        width: 200px;
-        height: 200px;
-    }
 
-}
-*/
-
-
-
-/*.galeria {
-    height: auto;
-    max-width: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    }
-
-.rigmingjpg{
-   border-radius: 10px;
-   min-height: 200px;
-   font-weight: bold;
-   padding: 20px;
-   position: relative;
-   overflow: hidden;
-   background-size: cover;
-   background-position: center;
-}*/
 
 /* =========================================================================== */
 /*                          estilo para contacto*/
@@ -545,12 +510,19 @@ label{
     .container{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
-/*iframe{ 
-    display: flex;
-    margin-inline-start: 50px;
+@media screen and (min-width: 720px) and (max-width: 953px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
 
-}*/
+
 
