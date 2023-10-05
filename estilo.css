@@ -328,6 +328,7 @@ footer {
 /* =========================================================================== */
 .texto {
   color: #fff;
+  font-family: inherit;
   padding: auto;
   margin-left: 5%;
   margin-right: 5%;

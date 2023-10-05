@@ -371,6 +371,7 @@ footer{
 /* =========================================================================== */
 .texto{
     color: $textosblancos;
+    font-family: inherit;
     padding: auto;
     margin-left: 5%;
     margin-right: 5%;
@@ -378,19 +379,19 @@ footer{
 
 .div2 {
     display: flex;
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  
-  @media screen and (min-width: 320px) and (max-width: 768px){
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px){
     .div2{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     }
     }
 
@@ -399,7 +400,7 @@ footer{
         width: 450px;
         height: 450px;
     }
-  }
+}
 
 
 
