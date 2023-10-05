@@ -372,7 +372,11 @@ footer{
 .texto{
     color: $textosblancos;
     padding: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+
 
 
 
@@ -464,31 +468,35 @@ footer{
 /*                          estilo para contacto*/
 /* =========================================================================== */
 .contacto1{
-    background-color: black;
+    background-color: rgba(226, 40, 226, 0.253);
     color: #fff;
     font-size: 28px;
-    padding-left: 80px;
-    margin-inline-start: 12px;
+    padding-left: 50px;
+    margin-right: 85%;
+    margin-left: 50%;
+    margin-inline-start: 50px;
 }
 .contacto2{
-    background-color: black;
+    background-color: rgba(226, 40, 226, 0.253);
     color: #fff;
     font-size: 22px;
     padding-left: 40px;
+    margin-right: 29%;
     margin-inline-start: 50px;
 }
 
 .contacto3{
-    background-color: black;
+    background-color: rgba(226, 40, 226, 0.253);
     color: #fff;
     font-size: 18px;
     padding-left: 40px;
+    margin-right: 80%;
     margin-inline-start: 50px;
 }
 
 @media screen and (min-width: 320px){
     .contacto2{
-        background-color: black;
+        background-color: rgba(226, 40, 226, 0.253);
         color: #fff;
         font-size: 22px;
         padding-left: 20px;
@@ -502,7 +510,6 @@ footer{
 }
 
 label{
-    background-color: black;
     color: #fff;
 }
 
