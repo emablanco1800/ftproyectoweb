@@ -333,6 +333,27 @@ footer {
   margin-right: 5%;
 }
 
+.div2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1254px) {
+  .nosotros2 {
+    width: 450px;
+    height: 450px;
+  }
+}
 /* =========================================================================== */
 /*                          estilo para CRYPTOS*/
 /* =========================================================================== */
